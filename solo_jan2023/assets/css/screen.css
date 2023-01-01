@@ -930,24 +930,21 @@ hr {
     font-size: 1.4rem;
 }
 
+----------------------
+/* CUSTOM CSS STUFF */
+----------------------
 
-/* tab markdown */
-
-
-$midnight: #2c3e50;
-$clouds: #ecf0f1;
-// General
-body {
-  color: $midnight;
-  background: $clouds;
+table.body {
+  color: #80d9ff;
+  background: #ffffff;
   padding: 0 1em 1em;
 }
-h1 {
+table.h1 {
   margin: 0;
   line-height: 2;
   text-align: center;
 }
-h2 {
+table.h2 {
   margin: 0 0 .5em;
   font-weight: normal;
 }
@@ -966,6 +963,7 @@ input {
     }
   }
 }
+
 /* Accordion styles */
 .tabs {
   border-radius: 8px;
@@ -974,18 +972,18 @@ input {
 }
 .tab {
   width: 100%;
-  color: white;
+  color: black;
   overflow: hidden;
   &-label {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: $midnight;
+    background: #80d9ff;
     font-weight: bold;
     cursor: pointer;
     /* Icon */
     &:hover {
-      background: darken($midnight, 10%);
+      background: darken(#80d9ff, 10%);
     }
     &::after {
       content: "\276F";
@@ -998,7 +996,7 @@ input {
   &-content {
     max-height: 0;
     padding: 0 1em;
-    color: $midnight;
+    color: #000000;
     background: white;
     transition: all .35s;
   }
@@ -1007,10 +1005,10 @@ input {
     justify-content: flex-end;
     padding: 1em;
     font-size: 0.75em;
-    background: $midnight;
+    background: #000000;
     cursor: pointer;
     &:hover {
-      background: darken($midnight, 10%);
+      background: darken(#80d9ff, 10%);
     }
   }
 }
@@ -1018,7 +1016,7 @@ input {
 // :checked
 input:checked {
   + .tab-label {
-    background: darken($midnight, 10%);
+    background: darken(#80d9ff, 10%);
     &::after {
       transform: rotate(90deg);
     }
@@ -1028,4 +1026,3 @@ input:checked {
     padding: 1em;
   }
 }
-
